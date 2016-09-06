@@ -1,4 +1,4 @@
-//运动步骤
+﻿//运动步骤
 //1、闪（瞬间把宽高都变成0），scal，随机
 //2、由小变大透明度1变为0,上一步效果走完了才会发生
 //3、图片旋转，同时透明度由0变为1，当所有图片透明度都变为0才会发生
@@ -8,7 +8,7 @@ window.onload= function () {
 	
 	var can=true;
 	//添加点击事件
-	btn.onclick=function(){
+	btn.onmouseover=function(){
 		if(!can){
 			return;
 		}
