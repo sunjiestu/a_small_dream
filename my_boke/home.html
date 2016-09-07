@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>我的博客</title>
+		<link rel="icon" href="img/z.jpg" />
+		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
+		<link rel="stylesheet" type="text/css" href="css/container.css"/>
+		<link rel="stylesheet" type="text/css" href="css/lunbo.css"/>
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		<div id="nav_img">
+			
+		</div>
+		<div id="nav">   
+			<ul>
+				<li><a href="" target="_blank">主页</a><span></span></li>
+				<li><a href="" target="_blank">代码</a><span></span></li>
+				<li><a href="" target="_blank">音乐</a><span></span></li>
+				<li><a href="http://www.imooc.com/course/programdetail/pid/20" target="_blank" >我的自学</a><span></span></li>
+				<li><a href="http://www.w3school.com.cn/" target="_blank">w3c</a><span></span></li>
+				<li><a href="pictures_Wall.html" target="_blank">照片墙</a><span></span></li>
+				<li><a href="" target="_blank">其他</a><span></span></li>
+			</ul>
+		</div>
+		<div id="nav_right">
+			
+		</div>
+		<div id="container">
+			<div id="list">
+				<img src="images/school_5.jpg"></img>
+				<img src="images/school_1.jpg"></img>
+				<img src="images/school_2.jpg"></img>
+				<img src="images/school_3.jpg"></img>
+				<img src="images/school_4.jpg"></img>
+				<img src="images/school_5.jpg"></img>
+				<img src="images/school_1.jpg"></img>
+		
+			</div>
+			<div id="buttons">
+				<span index="1" class="on"></span>
+				<span index="2"></span>
+				<span index="3"></span>
+				<span index="4"></span>
+				<span index="5"></span>
+			</div>
+			
+			<a id="prev" class="arrow">&lt;</a>
+			<a id="next" class="arrow">&gt;</a>
+
+		</div>
+	<audio src="mp3/do.mp3" id="music"></audio>
+	<script type="text/javascript">
+	var arr=['mp3/do.mp3',
+			'mp3/re.mp3',
+			'mp3/mi.mp3',
+			'mp3/fa.mp3',
+			'mp3/sol.mp3',
+			'mp3/la.mp3',
+			'mp3/si.mp3'];
+		$("#nav ul li").hover(function (){
+			var index=$(this).index();
+			$("#music").attr("src",arr[index]);
+			$("#music")[0].play();
+			$(this).find("span").animate({height:"56px"},500);
+		},function(){
+
+			$(this).find("span").animate({height:"0px"},500);
+
+		});
+			</script>
+	<script src="js/lunbo.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+</html>

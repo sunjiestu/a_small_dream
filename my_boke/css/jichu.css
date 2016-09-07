@@ -1,0 +1,7 @@
+
+body{background-repeat: no-repeat;}
+#bg_1{background-image: url(../images/100.jpg);background-position: center;height: 800px;width: 1320px;}
+#imgWall{-webkit-perspective: 1250px; border-radius:10%;box-shadow: 2px 2px 5px rgba(0,0,0,0.7);background-repeat-x: no-repeat;background-image: url(../images/909.JPG);background-position: center;background-repeat:no-repeat;width:760px;height:640px;margin: 0px 280px;}
+#imgWall img{float: left;}
+#btn{width: 100px;position:absolute;z-index:100;text-align: center;font:16px/40px "宋体";margin: 10px 590px;float:left;padding: 0 20px;background:chocolate;border-radius:50% ;box-shadow: 2px 2px 5px rgba(0,0,0,0.7);cursor: pointer;}
+.img_all{width:760px;height: 650px;margin-top: 10px;};
